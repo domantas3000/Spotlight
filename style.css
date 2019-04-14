@@ -1,0 +1,192 @@
+.trueweb_warning_div{
+    background-color: #fff !important; 
+    margin:0 !important; 
+    padding-top:50px !important; 
+    top:0 !important; 
+    left:0 !important; 
+    height: 100% !important; 
+    width: 100% !important; 
+    z-index: 9999 !important; 
+    position:absolute !important;
+}
+
+.trueweb_warning_heading{
+    color: #cc0000 !important;
+    font-family: Montserrat !important;
+    font-weight: normal !important;
+    font-size: 50px !important;
+}
+
+.trueweb_warning_paragraph{
+    margin-top: 30px;
+    color: #555555 !important;
+    font-family: Montserrat !important;
+    font-weight: normal !important;
+    font-size: 20px !important;
+    text-align: center;
+}
+
+#trueweb_warning_button {
+  
+    position: absolute;
+
+    font-family: Montserrat;
+    
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #cc0000;
+    text-decoration: none;
+    font-size: 2em;
+    display: inline-block;
+    
+    text-transform: uppercase;
+    padding: 0.5em 2em;
+    border: 2px solid #cc0000;
+    transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  #trueweb_warning_button::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 100%;
+    bottom: 0;
+    background: #cc0000;
+    transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+    z-index: -1;
+  }
+  #trueweb_warning_button::after {
+    content: "";
+    
+    display: inline-block;
+    background-image: url("https://image.flaticon.com/icons/png/128/109/109617.png");
+    filter: brightness(0) invert(1);
+    transform: scaleX(-1);
+    position: absolute;
+    
+    top: 0;
+    right: calc(100% - 3em);
+    left: 3em;
+    bottom: 0;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  #trueweb_warning_button:hover {
+    padding: 0.5em 0.5em 0.5em 3.5em;
+  }
+  #trueweb_warning_button:hover::before {
+    right: calc(100% - 3em);
+    left: 0;
+    transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  #trueweb_warning_button:hover::after {
+    left: 0;
+    transition: left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+
+
+#trueweb_warning_button_secondary {
+  
+    position: absolute;
+
+    font-family: Montserrat;
+    
+    left: 50%;
+    top: 65%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #999;
+    text-decoration: none;
+    font-size: 2em;
+    display: inline-block;
+    
+    text-transform: uppercase;
+    padding: 0.5em 2em;
+    border: 2px solid #999;
+    transition: 0.02s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  #trueweb_warning_button_secondary::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #999;
+    transition: 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+    z-index: -1;
+  }
+  #trueweb_warning_button_secondary::after {
+    content: "";
+    
+    display: inline-block;
+    background-image: url("https://image.flaticon.com/icons/png/128/109/109617.png");
+    filter: brightness(0) invert(1);
+    position: absolute;
+    
+    top: 0;
+    left: calc(100% - 3em);
+    right: 3em;
+    bottom: 0;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: right 0.3s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  #trueweb_warning_button_secondary:hover {
+    padding: 0.5em 3.5em 0.5em 0.5em;
+  }
+  #trueweb_warning_button_secondary:hover::before {
+    left: calc(100% - 3em);
+    right: 0;
+    transition: 0.3s cubic-bezier(0.1, 0, 0.1, 1), left 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+  }
+  #trueweb_warning_button_secondary:hover::after {
+    right: 0;
+    transition: right 0.3s 0.2s cubic-bezier(0.1, 0, 0.1, 1);
+}
+
+.loader-overlay {
+  -ms-opacity: 0.9;
+  background: #444;
+  display: block;
+  height: 100%;
+  left: 0;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  
+  width: 100%;
+  z-index: 100000;
+}
+
+.loader-content {
+  margin-left: auto;
+  margin-top: auto;
+  width: 50%;
+}
+
+.loader-center {
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);   
+  left: 50%;
+  display: block;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -55%);
+}
+
+.loader-text {
+  color: #FFF;
+  font-size: 18px;
+  height: 50%;
+}

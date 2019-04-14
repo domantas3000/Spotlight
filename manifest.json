@@ -1,0 +1,29 @@
+{
+    "name": "TrueWeb extension",
+    "version": "1.0",
+    "description": "Extension for TrueWeb",
+    "permissions": ["tabs", "activeTab", "declarativeContent", "storage", "<all_urls>"],
+    "options_page": "options.html",
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"], 
+          "css" : ["style.css"]
+          
+          
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "page_action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/get_started16.png"
+      }
+    },
+    "icons": {
+      "16": "images/get_started16.png"
+    },
+    "manifest_version": 2
+}
